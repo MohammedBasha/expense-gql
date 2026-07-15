@@ -2,7 +2,7 @@ import { users } from "../dummyData/data.js";
 
 const userResolver = {
     Query: {
-        users: () => {
+        users: (_parent, _args, { req, res }) => {
             return users;
         },
 
